@@ -27,7 +27,9 @@ public class OrdenacaoPessoas {
     protected List<Pessoa> ordernarPorAltura() {
         List<Pessoa> pessoasPorAltura = new ArrayList<>(pessoas);
         /*
-        - É possível criar uma classe que estende Comparator em um arquivo próprio;
+        - É possível criar uma classe package-private que implementa Comparator,
+        tanto no OrdenacaoPessoas quanto em Produto.
+        - É possível criar uma classe que implementa Comparator em um arquivo próprio;
         - Já que Comparator é uma interface funcional,
         ou seja, possui apenas um método abstrato,
         é possível utilizar lambda com o método compare;
